@@ -11,7 +11,7 @@ public class QuickSort {
     }
 
     private static void load() throws FileNotFoundException {
-                                        // change for file
+                                // change for file
         File number = new File("numbers-4.txt");
         Scanner scan = new Scanner(number);
         int index_count = 0;
