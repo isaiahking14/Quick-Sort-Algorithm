@@ -5,27 +5,27 @@ int[] QuickSort(int[] arr)
     l = 0
     r = length - 1
 
-    QuickSortRecursive(int[] arr, int l, int r)
-        * recursvie base case
-        if (subarray only has one item)
-            return arr
+QuickSortRecursive(int[] arr, int l, int r)
+    * recursvie base case
+    if (subarray only has one item)
+        return arr
         
-        * init iterators
-        j = 0
-        i = l -1
-        pivot = r;
-        * look over the subarray
-        while (j < r)
-            if (arr[j] < pivot)
-                i++
-                swap i and j
+    * init iterators
+    j = 0
+    i = l -1
+    pivot = r;
+    * look over the subarray
+    while (j < r)
+        if (arr[j] < pivot)
+            i++
+            swap i and j
         * iterate i after loop to find the spot for the new pivot 
-        i++
+    i++
 
-        swap i and pivot
+    swap i and pivot
 
-        pivot = i
+    pivot = i
 
-        QuickSortRecursive(left sub array)
+    QuickSortRecursive(left sub array)
 
-        QuickSortRecursive(right sub array)
+    QuickSortRecursive(right sub array)
